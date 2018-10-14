@@ -9,8 +9,8 @@ let alarmResponse
 chrome.runtime.onMessage.addListener(gotMessage)
 
 function gotMessage(message, sender, sendResponse) {
-    console.log(message.txt)
-    if (message.txt === "break") {
+    console.log(message.txt);
+    if (message.txt == "break") {
         alert("break")
     }
 }
