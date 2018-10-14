@@ -1,0 +1,23 @@
+
+{
+    "manifest_version": 2,
+    "name": "Break Reminder",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js":["content.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": ["background", "storage", "notifications", "alarms"],
+    "browser_action": {
+        "default_icon": "content/logo.PNG",     
+        "default_popup": "popup.html", 
+        "default_title": "Break timer settings"
+    }
+}
